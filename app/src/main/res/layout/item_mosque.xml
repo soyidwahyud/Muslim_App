@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/ivgambar"
+            android:layout_width="70dp"
+            android:layout_height="86dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/ivgambar"
+            android:layout_toRightOf="@id/ivgambar"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:text="Nama : "
+            />
+
+        <TextView
+            android:id="@+id/tvnama_masjid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/tvname"
+            android:layout_toRightOf="@id/tvname"
+            android:textColor="#333"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="65dp"
+            android:layout_toEndOf="@id/ivgambar"
+            android:layout_toRightOf="@id/ivgambar"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:text="Alamat : "
+            />
+
+        <TextView
+            android:id="@+id/tvalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="65dp"
+            android:layout_toEndOf="@id/tvaddress"
+            android:layout_toRightOf="@id/tvaddress"
+            android:textColor="#333"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/tvliink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="200dp"
+            android:layout_toEndOf="@id/ivgambar"
+            android:layout_toRightOf="@id/ivgambar"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:text="Link : "
+            />
+
+        <TextView
+            android:id="@+id/tvlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="200dp"
+            android:layout_toEndOf="@id/tvliink"
+            android:layout_toRightOf="@id/tvliink"
+            android:textColor="#333"
+            android:textSize="18dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

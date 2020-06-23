@@ -2,14 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.project.muslim_app">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_muslim_app"
         android:label="@string/appName"
         android:roundIcon="@mipmap/ic_muslim_app_round"
         android:supportsRtl="true"
-        android:theme="@style/SplassScreenCustom">
-
+        android:theme="@style/SplassScreenCustom"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.QuranActivity"></activity>
+        <activity android:name=".Activities.HomeActivity" />
+        <activity android:name=".Activities.MosqueActivity" /> <!-- <activity android:name=".Login.LoginActivity"></activity> -->
         <activity
             android:name=".Splash_Screen_Activity"
             android:noHistory="true">
@@ -19,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activities.MainActivity" />
     </application>
 
 </manifest>

@@ -6,7 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.project.muslim_app.Activities.MainActivity;
+//import com.project.muslim_app.Login.LoginActivity;
+
 public class Splash_Screen_Activity extends AppCompatActivity {
+
+    private final String TAG = "SPLASH_ACTIVITY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,6 @@ public class Splash_Screen_Activity extends AppCompatActivity {
             public void run() {
                 startActivity(new Intent(Splash_Screen_Activity.this, MainActivity.class));
             }
-        },4000);
+        }, 4000);
     }
 }

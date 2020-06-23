@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
-    tools:context=".Activities.MainActivity"
-    android:id="@+id/container">
+    tools:context=".Activities.HomeActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="#0E0E0E"
-        android:text="Heloo home" />
+        android:text="Heloo mosque" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

@@ -4,15 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
-    tools:context=".Activities.MainActivity"
-    android:id="@+id/container">
+    tools:context=".Activities.MosqueActivity">
 
-    <TextView
+
+    <ListView
+        android:id="@+id/lview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="#0E0E0E"
-        android:text="Heloo home" />
+        android:layout_height="670dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

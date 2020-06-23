@@ -8,6 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="SplassScreenCustom" parent="Theme.AppCompat.NoActionBar"/>
+    <style name="SplassScreenCustom" parent="Theme.AppCompat.Light.NoActionBar"/>
 
 </resources>

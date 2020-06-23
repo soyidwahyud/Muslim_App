@@ -4,4 +4,19 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#FFFFFF</color>
+
+    <!--    Black white-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!--    Theme Rally-->
+    <color name="rally_primary_green">#1EB980</color>
+    <color name="rally_primary_dark_green">#045D56</color>
+    <color name="rally_orange">#FF6859</color>
+    <color name="rally_yellow">#FFCF44</color>
+    <color name="rally_purple">#B15DFF</color>
+    <color name="rally_blue">#72DEFF</color>
+
+    <!--    status color-->
+    <color name="myGreen">#00b8a9</color>
+    <color name="myRed">#f6416c</color>
 </resources>

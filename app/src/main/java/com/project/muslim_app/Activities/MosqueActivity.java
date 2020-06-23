@@ -1,25 +1,19 @@
-package com.project.muslim_app.Fragments;
+package com.project.muslim_app.Activities;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
-import android.os.AsyncTask;
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.os.StrictMode;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.MenuItem;
 import android.widget.ListView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.muslim_app.Adapters.MosqueAdapters;
-import com.project.muslim_app.Json.getMosque;
 import com.project.muslim_app.R;
-import com.project.muslim_app.Server.Server;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
@@ -28,12 +22,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
-public class MosqueFragment extends Fragment {
-    private static final String newurl = Server.URL + "Muslim/getMasjid.php";
+public class MosqueActivity extends AppCompatActivity {
+    ListView listView;
+    private static final String newurl = "http://192.168.0.104/Muslim/displayMosque.php";
     String[] nama_masjid;
     String[] alamat_masjid;
     String[] link_masjid;
@@ -42,27 +33,49 @@ public class MosqueFragment extends Fragment {
     BufferedInputStream is;
     String line=null;
     String result=null;
-    ListView listView;
 
-
-    public MosqueFragment() {
-        // Required empty public constructor
-    }
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_mosque, container, false);
-        listView = (ListView)v.findViewById(R.id.lv_mosque);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_mosque);
+        listView = (ListView)findViewById(R.id.lview);
+
         StrictMode.setThreadPolicy((new StrictMode.ThreadPolicy.Builder().permitNetwork().build()));
         collectData();
-        MosqueAdapters mosqueAdapters = new MosqueAdapters(getActivity(),nama_masjid,alamat_masjid,link_masjid,gambar_masjid);
+        MosqueAdapters mosqueAdapters = new MosqueAdapters(this,nama_masjid,alamat_masjid,link_masjid,gambar_masjid);
         listView.setAdapter(mosqueAdapters);
 
-        return v;
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId())
+                {
+                    case R.id.home:
+                        Intent h = new Intent(MosqueActivity.this, MainActivity.class);
+                        startActivity(h);
+                        break;
+
+                    case R.id.quran:
+                        Intent q = new Intent(MosqueActivity.this, QuranActivity.class);
+                        startActivity(q);
+                        break;
+
+                    case R.id.mosque:
+//                        Intent m = new Intent(MosqueActivity.this, MosqueActivity.class);
+//                        startActivity(m);
+                        break;
+                }
+                return false;
+            }
+        });
+
     }
+
     private void collectData()
     {
 //Connection
