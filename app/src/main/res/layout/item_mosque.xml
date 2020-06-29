@@ -101,6 +101,7 @@
             android:layout_toRightOf="@id/tvliink"
             android:textColor="#333"
             android:textSize="18dp"
+            android:autoLink="all"
             />
 
     </RelativeLayout>

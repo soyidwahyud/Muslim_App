@@ -60,14 +60,14 @@ public class MosqueActivity extends AppCompatActivity {
                         startActivity(h);
                         break;
 
-                    case R.id.quran:
-                        Intent q = new Intent(MosqueActivity.this, QuranActivity.class);
-                        startActivity(q);
-                        break;
-
                     case R.id.mosque:
 //                        Intent m = new Intent(MosqueActivity.this, MosqueActivity.class);
 //                        startActivity(m);
+                        break;
+
+                    case R.id.about:
+                        Intent a = new Intent(MosqueActivity.this, AboutActivity.class);
+                        startActivity(a);
                         break;
                 }
                 return false;

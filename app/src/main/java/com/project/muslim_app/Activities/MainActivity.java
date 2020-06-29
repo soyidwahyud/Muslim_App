@@ -29,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
 //                        startActivity(h);
                         break;
 
-                    case R.id.quran:
-                        Intent q = new Intent(MainActivity.this, QuranActivity.class);
-                        startActivity(q);
-                        break;
-
                     case R.id.mosque:
                         Intent m = new Intent(MainActivity.this, MosqueActivity.class);
                         startActivity(m);
+                        break;
+
+                    case R.id.about:
+                        Intent a = new Intent(MainActivity.this, AboutActivity.class);
+                        startActivity(a);
                         break;
                 }
                 return false;

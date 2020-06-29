@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -81,6 +82,7 @@ public class MosqueAdapters extends ArrayAdapter<String> {
             tvw1=(TextView)v.findViewById(R.id.tvnama_masjid);
             tvw2=(TextView)v.findViewById(R.id.tvalamat);
             tvw3=(TextView)v.findViewById(R.id.tvlink);
+            tvw3.setAutoLinkMask(Linkify.ALL);
             ivw=(ImageView)v.findViewById(R.id.ivgambar);
         }
 

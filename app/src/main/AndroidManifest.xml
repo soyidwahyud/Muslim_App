@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/SplassScreenCustom"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activities.QuranActivity"></activity>
+        <activity android:name=".Activities.AboutActivity"></activity>
+        <activity android:name=".Activities.QuranActivity" />
         <activity android:name=".Activities.HomeActivity" />
         <activity android:name=".Activities.MosqueActivity" /> <!-- <activity android:name=".Login.LoginActivity"></activity> -->
         <activity

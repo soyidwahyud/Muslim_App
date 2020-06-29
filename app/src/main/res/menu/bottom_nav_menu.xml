@@ -7,16 +7,16 @@
         android:title="Home"
         />
     <item
-        android:id="@+id/quran"
-        android:enabled="true"
-        android:icon="@drawable/quraan"
-        android:title="Quran"
-         />
-    <item
         android:id="@+id/mosque"
         android:enabled="true"
         android:icon="@drawable/mosquee"
         android:title="Mosque"
          />
+    <item
+        android:id="@+id/about"
+        android:enabled="true"
+        android:icon="@drawable/help"
+        android:title="About"
+        />
 
 </menu>
