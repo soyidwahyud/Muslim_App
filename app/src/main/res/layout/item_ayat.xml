@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:text="Dalil: "
+            />
+
+        <TextView
+            android:id="@+id/tvnama_ayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/tvayat"
+            android:layout_toRightOf="@id/tvayat"
+            android:textColor="#333"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tvlatin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="105dp"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:text="terjemahan latin : "
+            />
+
+        <TextView
+            android:id="@+id/tvlatin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="105dp"
+            android:layout_toEndOf="@id/tvlatin"
+            android:layout_toRightOf="@id/tvlatin"
+            android:textColor="#333"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/tvarti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="290dp"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:text="Arti : "
+            />
+
+        <TextView
+            android:id="@+id/tvarti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="290dp"
+            android:layout_toEndOf="@id/tvarti"
+            android:layout_toRightOf="@id/tvarti"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:autoLink="all"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

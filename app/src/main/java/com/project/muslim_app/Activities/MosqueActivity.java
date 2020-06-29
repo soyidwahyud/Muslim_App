@@ -12,6 +12,7 @@ import android.widget.ListView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.muslim_app.Adapters.MosqueAdapters;
 import com.project.muslim_app.R;
+import com.project.muslim_app.Server.Server;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -24,7 +25,7 @@ import java.net.URL;
 
 public class MosqueActivity extends AppCompatActivity {
     ListView listView;
-    private static final String newurl = "http://192.168.0.104/Muslim/displayMosque.php";
+    private static final String newurl = Server.URL + "Muslim/displayMosque.php";
     String[] nama_masjid;
     String[] alamat_masjid;
     String[] link_masjid;

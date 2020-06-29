@@ -6,11 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Activities.AboutActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="#0E0E0E"
-        android:text="Heloo about" />
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo2fix"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -26,5 +36,44 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvcreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created By : Soyid Agi P"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivlogo"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <TextView
+        android:id="@+id/tvpenjelasan"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:text="Aplikasi ini dibuat untuk mempermudah masyarakat"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcreated"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/tvpenjelasan2"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:text="mengetahui lokasi Masjid yang berada di kota Depok"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpenjelasan"
+        app:layout_constraintVertical_bias="0.034" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
