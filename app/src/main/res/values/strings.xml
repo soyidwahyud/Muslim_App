@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Muslim_App</string>
     <string name="appName">Muslim App</string>
+    <string name="appNameFix">Ke Masjid Kuy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_home_fragment">Hello home fragment</string>
     <string name="hello_quran_fragment">Hello quran fragment</string>
